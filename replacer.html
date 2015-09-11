@@ -1,0 +1,36 @@
+<html>
+<head>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+  <link rel="stylesheet" href="css/styles.css">
+  <script src="js/scripts.js"></script>
+
+  <title>Change a sentence</title>
+</head>
+<body>
+  <div class="container">
+    <h1>Change a sentence</h1>
+
+    <form id="replacer">
+      <div class="form-group">
+        <label for="sentence">Enter a sentence</label>
+        <input id="sentence" type="text" placeholder="This app took 15 minutes and gave me Friday off.">
+
+        <label for="unword">Pick a word from that sentence to change</label>
+        <input id="unword" type="text" placeholder="Friday">
+
+        <label for="reword">Change it to this</label>
+        <input id="reword" type="text" placeholder="every day">
+      </div>
+
+      <button type="submit" class="btn">Submit</button>
+    </form>
+
+    <div class="showme">
+      <p>Old sentence:<span class="input"></span></p>
+      <p>New sentence:<span class="result"></span></p>
+    </div>
+
+  </div>
+</body>
+</html>
